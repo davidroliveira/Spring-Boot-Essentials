@@ -14,10 +14,6 @@ import static java.util.Arrays.asList;
 public class StudentEndpoint {
     @RequestMapping(method = RequestMethod.GET, path = "/list")
     public List<Student> listAll() {
-
-        
-
-        return asList(new Student[name: "Teste"], new Student(name: "Todoroki"))
-        //return asList(new Student());
+        return asList(new Student("Deku"), new Student("Todoroki"));
     }
 }
